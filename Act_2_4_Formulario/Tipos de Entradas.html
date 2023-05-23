@@ -1,0 +1,213 @@
+<!DOCTYPE HTML> 
+<html lang = "es">
+    <head>
+        <meta charset = "utf-8">
+        <meta name = "viewport" content = "width = device-width, 
+              initial-scale = 1, shrink-to-fit = no">
+        <meta http-equiv = "x-ua-compatible" content = "ie=edge">
+        <meta name="description" content="Mi página trata de esto">
+        <meta name="keywords" content="HTML5, CSS3, Javascript, palabra clave">
+
+        <style>
+            @import url('Style.css'); 
+        </style>
+
+    <title> Tipos de Entradas </title>
+    </head>
+    <body>
+        <h3> Tipos de Entradas </h3>
+        <h4>Tipo de Entrada Texto</h4> 
+        <form>
+            <label for="nombre"> Nombre:</label><br>
+            <input type="text" id="nombre" name="nombre"><br>
+            
+            <label for="apellidoPaterno"> Apellido Paterno:</label><br>
+            <input type="text" id=" apellidoPaterno " name=" apellidoPaterno "><br>
+            
+            <label for="apellidoMaterno"> Apellido Materno:</label><br>
+            <input type="text" id=" apellidoMaterno " name=" apellidoMaterno "><br>
+        </form>
+
+        <h4>Tipo de Entrada Password</h4>
+        <form>
+            <label for="usuario">Usuario:</label><br>
+            <input type="text" id="usuario" name="usuario"><br>
+            
+            <label for="clave">Clave:</label><br>
+            <input type="password" id="clave" name="clave"><br>
+        </form>
+
+        <h4>Tipo de Entrada Submit</h4>
+        <form action="/accion.php">
+            <label for="nombre"> Nombre:</label><br>
+            <input type="text" id="nombre" name="nombre"><br>
+           
+            <label for="apellidoPaterno"> Apellido Paterno:</label><br>
+            <input type="text" id=" apellidoPaterno " name=" apellidoPaterno "><br>
+           
+            <label for="apellidoMaterno"> Apellido Materno:</label><br>
+            <input type="text" id=" apellidoMaterno " name=" apellidoMaterno "><br><br>
+            
+            <input type="submit" value="Enviar">
+        </form>
+
+        <h4>Tipo de Entrada Reset</h4>
+        <form action="/accion.php">
+            <label for="nombre"> Nombre:</label><br>
+            <input type="text" id="nombre" name="nombre" value="Juan"><br>
+            
+            <label for="apellidoPaterno"> Apellido Paterno:</label><br>
+            <input type="text" id=" apellidoPaterno " name=" apellidoPaterno" value="Pérez"><br>
+            
+            <label for="apellidoMaterno"> Apellido Materno:</label><br>
+            <input type="text" id=" apellidoMaterno " name=" apellidoMaterno " value="García"><br><br>
+            
+            <input type="submit">
+            <input type="reset" value="Restaurar">
+        </form>
+
+        <h4>Tipo de Entrada Radio</h4>
+        <form>
+            <input type="radio" id="html" name="lenguajeFavorito" value="HTML">
+            
+            <label for="html">HTML</label><br>
+            <input type="radio" id="css" name=" lenguajeFavorito " value="CSS">
+            
+            <label for="css">CSS</label><br>
+            <input type="radio" id="javascript" name=" lenguajeFavorito " value="JavaScript">
+            
+            <label for="php">PHP</label><br>
+            <input type="radio" id="php" name=" lenguajeFavorito " value="PHP">
+            
+            <label for="php">PHP</label>
+        </form>
+
+        <h4>Tipo de Entrada CheckBox</h4>
+        <form>
+            <input type="checkbox" id="vehiculo1" name="vehiculo1" value="Auto">
+            
+            <label for=" vehiculo 1"> Tengo auto</label><br>
+            <input type="checkbox" id="vehiculo2" name=" vehiculo 2" value="Moto">
+            
+            <label for=" vehiculo 2"> Tengo moto</label><br>
+            <input type="checkbox" id="vehiculo3" name=" vehiculo 3" value="Yate">
+            
+            <label for=" vehiculo 3"> Tengo yate</label>
+        </form>
+
+        <h4>Tipo de Entrada Button</h4>
+        <form>
+            <input type="button" onclick="alert('Hola a todos!')" value="Haz clic aqui"¡Hazme clic!">
+        </form>
+
+        <h4>Tipo de Entrada Color</h4>
+        <form>
+            <label for="color">Selecciona tu color favorito:</label>
+            <input type="color" id="color" name="favcolor">
+        </form>
+
+        <h4>Tipo de Entrada Fecha</h4>
+        <form>
+            <label for="fechaNacimiento"> Cumpleaños:</label>
+            <input type="date" id=" fechaNacimiento " name=" fechaNacimiento "><br>
+        </form>
+
+        <br><b id="normal">Opcion 2</b>
+        <form>
+            <label for="fechaMax"> Ingrese una fecha anterior a 1980-01-01:</label>
+            <input type="date" id=" fechaMax " name=" fechaMax " max="1979-12-31"><br><br>
+            
+            <label for=" fechaMin "> Ingrese una fecha posterior al 2000-01-01:</label>
+            <input type="date" id=" fechaMin " name=" fechaMin " min="2000-01-02">
+        </form>
+
+        <h4>Tipo de Entrada Datetime-Local</h4>
+        <form>
+            <label for=" fechaNacimientoHora "> Cumpleaños (fecha y hora):</label>
+            <input type="datetime-local" id=" fechaNacimientoHora " name=" fechaNacimientoHora">
+        </form>
+
+        <h4>Tipo de Entrada Email</h4>
+        <form>
+            <label for="correo"> Ingrese su correo electrónico:</label>
+            <input type="email" id=" correo " name=" correo ">
+        </form>
+
+        <h4>Tipo de Entrada File</h4>
+        <form>
+            <label for="miArchivo"> Seleccione un archivo:</label>
+            <input type="file" id=" miArchivo " name=" miArchivo ">
+        </form>
+
+        <h4>Tipo de Entrada Hidden</h4>
+        <form action="/accion.php">
+            <input type="hidden" id="identificadorUsuario" name=" identificadorUsuario " value="8313">
+            
+            <label for="nombre"> Nombre:</label><br>
+            <input type="text" id="nombre" name="nombre" value="Juan"><br>
+            
+            <label for="apellidoPaterno"> Apellido Paterno:</label><br>
+            <input type="text" id=" apellidoPaterno " name=" apellidoPaterno" value="Pérez"><br>
+           
+            <label for="apellidoMaterno"> Apellido Materno:</label><br>
+            <input type="text" id=" apellidoMaterno " name=" apellidoMaterno " value="García"><br><br>
+           
+            <input type="submit">
+            <input type="reset" value="Restaurar">
+        </form>
+
+        <h4>Tipo de Entrada Month</h4>
+        <form>
+            <label for="MesAnio"> Cumpleaños (mes y año):</label>
+            <input type="month" id=" MesAnio " name=" MesAnio ">
+        </form>
+
+        <h4>Tipo de Entrada Number</h4>
+        <form>
+            <label for=" cantidad "> Cantidad (entre 1 y 10):</label>
+            <input type="number" id=" cantidad " name=" cantidad " min="1" max="10">
+        </form>
+
+        <br><b id="normal">Con Restricciones</b>
+        <form>
+            <label for="cantidad">Cantidad:</label>
+            <input type="number" id="cantidad" name="cantidad " min="0" max="100" step="10" value="30">
+        </form>
+
+        <h4>Tipo de Entrada Range</h4>
+        <form>
+            <label for="volumen">Volumen (between 0 and 30):</label>
+            <input type="range" id=" volumen " name=" volumen " min="0" max="30">
+        </form>
+
+        <h4>Tipo de Entrada Search</h4>
+        <form>
+            <label for="buscaGoogle"> Buscar en Google:</label>
+            <input type="search" id="buscaGoogle" name="buscaGoogle">
+        </form>
+
+        <h4>Tipo de Entrada Tel</h4>
+        <form>
+            <label for="telefono"> Ingrese su número de teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+        </form>
+
+        <h4>Tipo de Entrada Time</h4>
+        <form>
+            <label for="appt"> Seleccione una hora:</label>
+            <input type="time" id="hora" name="hora">
+        </form>
+
+        <h4>Tipo de Entrada URL</h4>
+        <form>
+            <label for=" paginaInicio "> Añade tu página de inicio:</label>
+            <input type="url" id="paginaInicio" name=" paginaInicio ">
+        </form>
+
+        <h4>Tipo de Entrada Week</h4>
+        <form>
+            <label for="semana">Select a week:</label>
+            <input type="week" id="semana" name="semana">
+        </form>
+    </body>
+</html>

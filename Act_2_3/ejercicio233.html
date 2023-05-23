@@ -1,0 +1,126 @@
+<!doctype html>
+<HTML lang=”es”>
+    <style>
+        table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+        }
+        td, th {
+        border: 1px solid #db329a;
+        text-align: left;
+        padding: 8px;
+        }
+        tr:nth-child(even) {
+        background-color: #a34a97;
+        }
+        thead {color: rgb(223, 157, 219);}
+        tbody {color: rgb(240, 127, 225);}
+       tfoot {color: rgb(218, 100, 155);}
+
+
+       contenedor-rejilla {
+display: grid;
+grid-row-gap: 50px;
+grid-column-gap: 50px;
+/* O utilizar la siguiente instrucción para establecer ambos valores*/
+grid-gap: 50px 70px;
+grid-template-columns: auto auto auto;
+background-color: #2196F3;
+padding: 10px;
+}
+.dato-rejilla {
+background-color: rgba(255, 255, 255, 0.8);
+border: 1px solid rgba(0, 0, 0, 0.8);
+padding: 20px;
+font-size: 30px;
+text-align: center;
+}
+        </style>
+<HEAD>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,
+initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="description"
+content="Mi página trata de esto">
+<meta name="keywords"
+content="HTML5, CSS3, Javascript, palabra clave">
+<TITLE>Título del documento</TITLE>
+</HEAD>
+<BODY>
+        
+    <table border="1" style="text-align:center;">
+        <thead >
+        <th colspan="2"> Tic's</th>
+        <th colspan="8"> Materias</th>
+        </thead>
+        <tr>
+        <tbody >
+        <th rowspan="12">Alumnos </th>
+        <th> Usuarios</th>
+            <th>Nombres</th>
+            <th>Fisica</th>
+            <th>Ecologia</th>
+        <th>Calculo diferencial</th>
+        <th>Promedio </th>
+        
+          <tr>
+        <td> <img src="1.jpeg" width="40" heigth="40"></td>
+            <td>Yair Israel Moreno Irigoyen</td>
+            <td> 8</td>
+            <td>9</td>
+        <td>7</td>
+        <td>8.3</td>
+          </tr>
+          
+          <tr>
+        <td><object data="1.jpeg" width="300" height="200"></object></td>
+            <td>Eduardo Ya�ez Hernandez</td>
+            <td>9</td>
+            <td>10</td>
+            <td>8</td>
+            <td>8.3</td>
+        </tr>
+         
+        <tr>
+        <td><img src="2.gif" width="40" heigth="40"></td>
+            <td>Erika Patrana Velazquez</td>
+            <td>10</td>
+            <td>9</td>
+            <td>8</td>
+            <td>8.3</td>
+            
+          </tr>
+        <tr>
+        <td><img src="2.gif" alt="Animación de izquierda a derecha"
+            style="float:right;width:42px;height:42px;"></td>
+            <td>Brandon Galindo Ramirez</td>
+            <td>10</td>
+            <td>9</td>
+            <td>8</td>
+            <td>8.3</td>
+          </tr>
+        <tr>
+    
+        </tbody>
+          </tr>
+        <tfoot >
+            <th colspan="8" ></th>
+            <th>Promedio Grupal</th>
+            <td>8.8</td>
+        </tfoot>
+            </table>
+            <h1>Mostrando una rejilla (grid y inline-grid)</h1>
+            <div class="contenedor-rejilla">
+                <div class="dato-rejilla">A</div>
+                <div class="dato-rejilla">B</div>
+                <div class="dato-rejilla">C</div>
+                <div class="dato-rejilla">D</div>
+                <div class="dato-rejilla">E</div>
+                <div class="dato-rejilla">F</div>
+                <div class="dato-rejilla">G</div>
+                <div class="dato-rejilla">H</div>
+                <div class="dato-rejilla">I</div>
+</BODY>
+</HTML>

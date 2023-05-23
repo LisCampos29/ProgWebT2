@@ -1,0 +1,52 @@
+<!doctype html>
+<HTML lang=”es”>
+<HEAD>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,
+initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="description"
+content="Mi primer formulario">
+<meta name="keywords"
+content="HTML5, CSS3, Javascript, palabra clave">
+<TITLE>Título del documento</TITLE>
+<link rel="stylesheet" href="style.css">
+</HEAD>
+<BODY>
+    <h1 class="p5">Formulario</h1>
+<form action="accion.php" method="post" target="_blank">
+    <fieldset>
+        <legend>Datos de la persona:</legend>
+    <label for="nombre">Nombre:</label><br>
+    <input type="text" id="nombre" name="nombre" value="" autocomplete="name"><br>
+    <label for="ApellidoPaterno">Apellido paterno:</label><br>
+    <input type="text" id="apellidoPaterno" name="apellidoPaterno"
+    value="" autocomplete="family-name"><br><br>
+    <label for="ApellidoMaterno">Apellido materno:</label><br>
+    <input type="text" id="apellidoMaterno" name="apellidoMaterno"
+    value="" autocomplete="family-name"><br><br>
+</fieldset>
+<fieldset>
+    <label for="auto">Selecciona un auto car:</label>
+<select id="auto" name="auto">
+<option value="vocho">Volkswagen</option>
+<option value="focus">Focus</option>
+<option value="fiat">Fiat</option>
+<option value="audi">Audi</option>
+</select><br><br>
+
+<label for="fruta">Selecciona una fruta:</label>
+<select id="fruta" name="fruta[]" size="4" multiple>
+<option value="fresa">Fresa</option>
+<option value="sandia">Sandia</option>
+<option value="melon">Melon</option>
+<option value="pera">Pera</option>
+</select><br><br>
+
+
+</fieldset>
+    <input type="submit" name="btn" value="Submit">
+    </form>
+ 
+</BODY>
+</HTML>

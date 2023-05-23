@@ -1,0 +1,99 @@
+@import url('style2.css');
+
+/*Asignaciones multiples*/
+
+h4
+{
+    background-color:paleturquoise;
+}
+#o
+{
+    background-color: violet;
+}
+#diferente 
+{
+    background-color: lightpink;
+}
+.importante
+{
+    font-family: cursive;
+    color: deeppink;
+}
+body
+{
+    font-family: monospace;
+}
+b
+{
+    color:lightskyblue;
+    font-size: x-large;
+}
+#normal
+{
+    color: black;
+    font-size: medium;
+}
+h5
+{
+    background-color: lightgrey;
+}
+
+/*Selectores*/
+/*Selector Types*/
+pre
+{
+    text-align: right;
+}
+/*Selector Decendant*/
+p b
+{
+    color: blueviolet;
+}
+/*Selector Child*/
+ol > li
+{
+    font-weight: bold;
+}
+/*Selector ID*/
+#miid
+{
+    text-decoration: underline;
+}
+/*Selector Clases*/
+.class
+{
+    margin-left: 50px;
+}
+/*Selector Atributte*/
+a[href="https://www.youtube.com/"]
+{
+    background-color:lightsalmon;
+}
+/*Selector Universal*/
+* [lang^=en] 
+{
+    color: rgb(249, 25, 223);
+}
+*.warning 
+{
+    color: rgb(55, 162, 255);
+}
+/*Selector de Grupo*/
+dl, #idname, .classname
+{
+    border-bottom: 1px dotted rgb(255, 38, 0);
+}
+
+/*Bordes y Relleno*/
+.box 
+{
+    writing-mode: horizontal-tb;
+    direction: ltr;
+}
+
+.Border
+{
+    padding: auto;
+    background-color: lightblue;
+    border: 3px solid #ff22c4;
+}
